@@ -35,8 +35,8 @@
 <meta property="og:locale" content="ko" />
 <meta name="description" content="This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set." />
 <meta property="og:description" content="This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set." />
-<link rel="canonical" href="https://yewonkim301.github.io/posts/write-a-new-post/" />
-<meta property="og:url" content="https://yewonkim301.github.io/posts/write-a-new-post/" />
+<link rel="canonical" href="http://localhost:4000/posts/write-a-new-post/" />
+<meta property="og:url" content="http://localhost:4000/posts/write-a-new-post/" />
 <meta property="og:site_name" content="One" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-08T15:10:00+09:00" />
@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@yeowne301" />
 <meta name="twitter:creator" content="@cotes2020" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2019-08-08T15:10:00+09:00","datePublished":"2019-08-08T15:10:00+09:00","description":"This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.","headline":"Writing a New Post","mainEntityOfPage":{"@type":"WebPage","@id":"https://yewonkim301.github.io/posts/write-a-new-post/"},"url":"https://yewonkim301.github.io/posts/write-a-new-post/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2019-08-08T15:10:00+09:00","datePublished":"2019-08-08T15:10:00+09:00","description":"This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.","headline":"Writing a New Post","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/write-a-new-post/"},"url":"http://localhost:4000/posts/write-a-new-post/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -246,7 +246,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/assets/img/snoopy.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/assets/img/Image.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
       <a href="/">One</a>
@@ -964,8 +964,7 @@
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -987,24 +986,17 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
-            
-              
-                <a href="https://github.com/cotes2020/">Cotes Chung</a>
-                
-              
-            
+              <a href="https://github.com/cotes2020/"
+              >Cotes Chung</a
+            >   
           </em>
         </span>
 
@@ -1042,8 +1034,7 @@
     </div>
   </header>
 
-  <div class="content">
-    <p>This tutorial will guide you how to write a post in the <em>Chirpy</em> template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.</p>
+  <div class="content"><p>This tutorial will guide you how to write a post in the <em>Chirpy</em> template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.</p>
 
 <h2 id="naming-and-path"><span class="me-2">Naming and Path</span><a href="#naming-and-path" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1742,49 +1733,47 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 <h2 id="learn-more"><span class="me-2">Learn More</span><a href="#learn-more" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>For more knowledge about Jekyll posts, visit the <a href="https://jekyllrb.com/docs/posts/">Jekyll Docs: Posts</a>.</p>
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        
-          <a href="/categories/blogging/">Blogging</a>,
-          <a href="/categories/tutorial/">Tutorial</a>
-      </div>
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+      <a
+        href="/categories/blogging/"
+        >Blogging</a
+      >,
+      <a
+        href="/categories/tutorial/"
+        >Tutorial</a
+      >
+    </div>
     
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/writing/"
-            class="post-tag no-text-decoration"
-          >writing</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/writing/"
+        class="post-tag no-text-decoration"
+      >writing</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->
@@ -1800,21 +1789,21 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Writing%20a%20New%20Post%20-%20One&url=https%3A%2F%2Fyewonkim301.github.io%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Writing%20a%20New%20Post%20-%20One&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Writing%20a%20New%20Post%20-%20One&u=https%3A%2F%2Fyewonkim301.github.io%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Writing%20a%20New%20Post%20-%20One&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fyewonkim301.github.io%2Fposts%2Fwrite-a-new-post%2F&text=Writing%20a%20New%20Post%20-%20One" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fwrite-a-new-post%2F&text=Writing%20a%20New%20Post%20-%20One" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1838,6 +1827,23 @@ If you are building the site via <code class="language-plaintext highlighter-rou
   </div>
   <!-- div.post-tail-wrapper -->
 </article>
+
+<script
+  src="https://giscus.app/client.js"
+  data-repo="yewonkim301/yewonkim301.github.io"
+  data-repo-id="R_kgDOMLSHnQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOMLSHnc4CgNwq"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="ko"
+  crossorigin="anonymous"
+  async
+></script>
 
 
             
