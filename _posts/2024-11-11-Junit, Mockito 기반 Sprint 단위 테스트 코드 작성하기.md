@@ -5,8 +5,6 @@ categories:
   - TIL
   - Spring
 tags: [TIL, Spring, Java, Junit, Mockito]
-image:
-  path: 
 ---
 
 ### 도입 계기
