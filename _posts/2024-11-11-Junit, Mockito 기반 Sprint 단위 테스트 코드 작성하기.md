@@ -1,7 +1,7 @@
 ---
 title: "Junit, Mockito 기반 Sprint 단위 테스트 코드 작성하기"
 date: 2024-11-11
-categories: [TIL, Spring]
+categories: [Spring], [TIL]
 tags: [TIL, Spring, Java, Junit, Mockito]
 image:
   path: 
