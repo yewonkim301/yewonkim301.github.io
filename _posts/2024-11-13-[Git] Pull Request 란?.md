@@ -28,9 +28,9 @@ tags: [TIL, Git, PR]
     ![img](/assets/img/til/pr3.png)
 
 <br /><br />
+
 참고 : 
 - [[GIT] ⚡️ 깃헙 Pull Request 보내는 방법 - 알기 쉽게 정리](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B9%83%ED%97%99-PRPull-Request-%EB%B3%B4%EB%82%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-folk-issue)
 - [[Git 삽질기록] 'PR을 올리다'? Pull Request에 대해서](https://holika.tistory.com/entry/Git-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D-PR%EC%9D%84-%EC%98%AC%EB%A6%AC%EB%8B%A4-Pull-Request%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
-- [[Git] Git 의 Issue 와 Pull Request, Review 기능 사용하기 (merger금지, 커밋과 이슈연결 등)
-출처: https://skylarcoding.tistory.com/225 [코딩 공부하는 블로그:티스토리]](https://skylarcoding.tistory.com/225)
+- [[Git] Git 의 Issue 와 Pull Request, Review 기능 사용하기 (merger금지, 커밋과 이슈연결 등)](https://skylarcoding.tistory.com/225)
 - [강의자료] [특강 1] Git 그리고 PR(Pull Request)
