@@ -81,6 +81,5 @@ public class Restaurant extends Timestamped {
 
 참고 : 
 - [[JPA] @Transient와 @Transient? (Spring Data와 JPA의 관계에 대해서)](https://dogfood.tistory.com/entry/JPA-Transient%EC%99%80-Transient-Spring-Data%EC%99%80-JPA%EC%9D%98-%EA%B4%80%EA%B3%84%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C?category=951035)
-- [[Spring JPA] Column으로 쓰지않는 변수에 대한 선언. @Transient
-출처: https://juntcom.tistory.com/90 [쏘니의 개발블로그:티스토리]](https://juntcom.tistory.com/90)
+- [[Spring JPA] Column으로 쓰지않는 변수에 대한 선언. @Transient](https://juntcom.tistory.com/90)
 - [JPA에서 @Transient 애노테이션이 존재하는 이유](https://gmoon92.github.io/jpa/2019/09/29/what-is-the-transient-annotation-used-for-in-jpa.html)
