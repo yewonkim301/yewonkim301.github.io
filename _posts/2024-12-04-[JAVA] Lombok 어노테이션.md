@@ -3,8 +3,6 @@ title: "[JAVA] Lombok 어노테이션"
 date: 2024-12-04
 categories: [JAVA]
 tags: [TIL, JAVA]
-image:
-  path: /assets/img/til/docker.png
 ---
 
 ## 📍 Lombok 이란?
