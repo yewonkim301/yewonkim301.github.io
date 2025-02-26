@@ -80,6 +80,10 @@ jobs:
     steps:
       - name: List available artifacts
         run: ls -la ${{ runner.temp }}
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
