@@ -64,6 +64,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          name: github-pages
       - name: Verify artifact upload
         run: ls -la ./_site # 업로드할 파일 목록 확인
       - name: Clean previous site
@@ -77,6 +78,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: List available artifacts
+        run: ls -la ${{ runner.temp }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
