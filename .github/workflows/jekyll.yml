@@ -41,8 +41,6 @@ jobs:
           cache-version: 1 # Increment this number if you need to re-download cached gems
       - name: npm setup
         run: npm i && npm run build
-      - name: gem update
-        run: bundle update
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -53,7 +51,12 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-artifact@v4
+        # uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v2.0.0
+        with:
+          name: site
+          path: "_site${{ steps.pages.outputs.base_path }}"
+          retention-days: 1
 
   # Deployment job
   deploy:
