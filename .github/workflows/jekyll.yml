@@ -51,6 +51,10 @@ jobs:
           ls -la _site
         env:
           JEKYLL_ENV: production
+      - name: Verify built files
+        run: |
+          echo "=== Checking generated files ==="
+          find _site -type f
       - name: Verify artifact upload
         run: |
           echo "=== Checking uploaded files ==="
@@ -60,7 +64,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-          name: github-pages
+          name: jekyll-site
       - name: Verify artifact upload
         run: ls -la ./_site # 업로드할 파일 목록 확인
       - name: Clean previous site
@@ -77,3 +81,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          artifact_name: jekyll-site 
