@@ -49,14 +49,19 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        # uses: actions/upload-artifact@v4
-        uses: actions/upload-pages-artifact@v3.0.1
+      # - name: Upload artifact
+      #   # Automatically uploads an artifact from the './_site' directory by default
+      #   # uses: actions/upload-artifact@v4
+      #   uses: actions/upload-pages-artifact@v3.0.1
+      #   with:
+      #     name: site
+      #     path: "_site${{ steps.pages.outputs.base_path }}"
+      #     retention-days: 1
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          name: site
-          path: "_site${{ steps.pages.outputs.base_path }}"
-          retention-days: 1
+          path: build_outputs_folder/
 
   # Deployment job
   deploy:
