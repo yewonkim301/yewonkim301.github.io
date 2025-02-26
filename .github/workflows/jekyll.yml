@@ -64,7 +64,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-          name: jekyll-site
       - name: Verify artifact upload
         run: ls -la ./_site # 업로드할 파일 목록 확인
       - name: Clean previous site
@@ -81,5 +80,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          artifact_name: jekyll-site 
