@@ -51,11 +51,15 @@ jobs:
           ls -la _site
         env:
           JEKYLL_ENV: production
+      - name: Verify artifact upload
+        run: |
+          echo "=== Checking uploaded files ==="
+          find _site -type f
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: _site
           name: github-pages
       - name: Verify artifact upload
         run: ls -la ./_site # 업로드할 파일 목록 확인
