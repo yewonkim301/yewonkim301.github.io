@@ -83,9 +83,12 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages
+          name: github-pages  # 이전 단계에서 업로드된 artifact 이름과 동일해야 함
+          path: ./artifact_downloaded # 다운로드된 파일을 저장할 경로 설정
+      - name: List downloaded artifacts
+        run: ls -la ./artifact_downloaded  # 다운로드된 파일이 있는지 확인
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: github-pages
+          artifact_name: github-pages  # 다운로드된 artifact 이름과 일치
