@@ -1,5 +1,5 @@
 ---
-title: "[JAVA] 싱글톤(Singleton) 패턴이란 무엇인가요?"
+title: "[JAVA] 싱글톤(Singleton) 패턴이란?"
 date: 2025-08-25
 categories: [JAVA]
 tags: [TIL, JAVA, 디자인패턴]
